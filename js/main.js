@@ -1,11 +1,9 @@
-function calcular (montoTotal, totalPagado) {
+function calcularCuotas (monto, cuotas) {
       
-    var total = 0;
-    if (totalPagado && totalPagado > 0) {
-        total = montoTotal - totalPagado;
+    let totalMes = 0;
+    if (monto > 0) {
+        totalMes = monto / cuotas;
     }
-
-     var tipoDeCuota = 24;
-     var totalMes = total / 24;
-     var totalMesMasImpuestos = totalMes + (totalMes * 0.05);
+    let totalMesMasIVA = totalMes + (totalMes * 0.21);
+    return totalMesMasIVA;
 }
