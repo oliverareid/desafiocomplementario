@@ -1,13 +1,11 @@
-let ingresarPiso = prompt("Ingrese el número del piso al que desea ir");
-
-while (ingresarPiso != "LLENO" || ingresarPiso != "lleno"){
-    if (ingresarPiso <= 10 && ingresarPiso != 8){
-        alert("Usted está en el piso "+ ingresarPiso);
-    } else if (ingresarPiso == 8){
-        alert("Este piso se encuentra en construcción");
-    } else {
-        alert("El piso seleccionado no existe");
+function calcular (montoTotal, totalPagado) {
+      
+    var total = 0;
+    if (totalPagado && totalPagado > 0) {
+        total = montoTotal - totalPagado;
     }
-    ingresarPiso = prompt("Ingrese el número del piso al que desea ir");
-}
 
+     var tipoDeCuota = 24;
+     var totalMes = total / 24;
+     var totalMesMasImpuestos = totalMes + (totalMes * 0.05);
+}
