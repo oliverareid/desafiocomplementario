@@ -18,3 +18,4 @@ function calcularCuotas (monto, cuotas) {
     return totalMesMasIVA;
 }
 console.log(calcularCuotas(montoCompra, preguntaCuotas));
+
