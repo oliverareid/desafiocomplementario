@@ -1,6 +1,6 @@
 let montoCompra=parseInt(prompt("Monto de la compra"));
 let preguntaCuotas=parseInt(prompt("Cantidad de cuotas"));
-let alicuota=parseInt(prompt("Ingrese la alícuota de IVA que le corresponda (21, 10.5 o 0)"));
+let alicuota=parseInt(prompt("Ingrese la alícuota de IVA que le corresponda:\n\n1 -21\n2 -10.5\n3 -0)"));
 
 function calcularCuotas (monto, cuotas) {
       
